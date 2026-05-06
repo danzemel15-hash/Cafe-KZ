@@ -16,11 +16,8 @@
             background: #faf9f7;
             color: #2c2c2c;
             line-height: 1.6;
-            position: relative;
-            overflow-x: hidden;
         }
 
-        /* Coffee mug background pattern */
         .background-pattern {
             position: fixed;
             top: 0;
@@ -30,10 +27,9 @@
             opacity: 0.08;
             pointer-events: none;
             z-index: -1;
-            background-image: 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><style>.mug{fill:none;stroke:%232c2c2c;stroke-width:2;}</style></defs><g class="mug"><circle cx="60" cy="60" r="25"/><rect x="35" y="85" width="50" height="40" rx="5"/><path d="M 90 95 Q 110 95 110 105 Q 110 115 90 115"/></g><g class="mug" transform="translate(120, 100)"><circle cx="60" cy="60" r="25"/><rect x="35" y="85" width="50" height="40" rx="5"/><path d="M 90 95 Q 110 95 110 105 Q 110 115 90 115"/></g><g class="mug" transform="translate(60, 140)"><circle cx="60" cy="60" r="25"/><rect x="35" y="85" width="50" height="40" rx="5"/><path d="M 90 95 Q 110 95 110 105 Q 110 115 90 115"/></g></svg>');
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><circle cx="75" cy="75" r="30" fill="none" stroke="%232c2c2c" stroke-width="2"/><rect x="50" y="110" width="50" height="45" rx="5" fill="none" stroke="%232c2c2c" stroke-width="2"/><path d="M 105 120 Q 120 120 120 130 Q 120 140 105 140" fill="none" stroke="%232c2c2c" stroke-width="2"/><circle cx="200" cy="100" r="30" fill="none" stroke="%232c2c2c" stroke-width="2"/><rect x="175" y="135" width="50" height="45" rx="5" fill="none" stroke="%232c2c2c" stroke-width="2"/><path d="M 230 145 Q 245 145 245 155 Q 245 165 230 165" fill="none" stroke="%232c2c2c" stroke-width="2"/><circle cx="120" cy="220" r="30" fill="none" stroke="%232c2c2c" stroke-width="2"/><rect x="95" y="255" width="50" height="45" rx="5" fill="none" stroke="%232c2c2c" stroke-width="2"/><path d="M 150 265 Q 165 265 165 275 Q 165 285 150 285" fill="none" stroke="%232c2c2c" stroke-width="2"/></svg>');
             background-repeat: repeat;
-            background-size: 400px 400px;
+            background-size: 300px 300px;
         }
 
         .container {
@@ -42,11 +38,6 @@
             padding: 60px 40px;
             position: relative;
             z-index: 1;
-            background: rgba(250, 249, 247, 0.95);
-            border-radius: 8px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
 
         header {
@@ -68,46 +59,6 @@
             color: #666;
             letter-spacing: 2px;
             text-transform: uppercase;
-        }
-
-        .menu-section {
-            margin-bottom: 50px;
-        }
-
-        .section-title {
-            font-size: 0.85rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #888;
-            margin-bottom: 25px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid #e0dcd8;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .section-icon {
-            font-size: 1.2rem;
-        }
-
-        .menu-item {
-            margin-bottom: 18px;
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 15px;
-        }
-
-        .item-name {
-            font-size: 1rem;
-            font-weight: 400;
-        }
-
-        .item-dot {
-            flex-grow: 1;
-            border-bottom: 1px dotted #ccc;
-            margin: 0 8px;
         }
 
         .tabs {
@@ -149,6 +100,46 @@
             display: block;
         }
 
+        .menu-section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e0dcd8;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-icon {
+            font-size: 1.2rem;
+        }
+
+        .menu-item {
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 15px;
+        }
+
+        .item-name {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .item-dot {
+            flex-grow: 1;
+            border-bottom: 1px dotted #ccc;
+            margin: 0 8px;
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 40px 25px;
@@ -156,14 +147,6 @@
 
             h1 {
                 font-size: 2rem;
-            }
-
-            .menu-item {
-                font-size: 0.95rem;
-            }
-
-            .tabs {
-                gap: 10px;
             }
 
             .tab-button {
@@ -187,7 +170,6 @@
             <button class="tab-button" onclick="switchTab('hot')">🔥 Hot Drinks</button>
         </div>
 
-        <!-- ICED DRINKS -->
         <div id="iced" class="tab-content active">
             <section class="menu-section">
                 <div class="section-title">
@@ -242,7 +224,6 @@
             </section>
         </div>
 
-        <!-- HOT DRINKS -->
         <div id="hot" class="tab-content">
             <section class="menu-section">
                 <div class="section-title">
@@ -296,18 +277,13 @@
 
     <script>
         function switchTab(tabName) {
-            // Hide all tab contents
             const contents = document.querySelectorAll('.tab-content');
             contents.forEach(content => content.classList.remove('active'));
 
-            // Remove active class from all buttons
             const buttons = document.querySelectorAll('.tab-button');
             buttons.forEach(button => button.classList.remove('active'));
 
-            // Show selected tab
             document.getElementById(tabName).classList.add('active');
-
-            // Add active class to clicked button
             event.target.classList.add('active');
         }
     </script>
