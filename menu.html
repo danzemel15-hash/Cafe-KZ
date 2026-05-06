@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe KZ - Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #faf9f7;
+            color: #2c2c2c;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 2px solid #2c2c2c;
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 0.9rem;
+            color: #666;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .menu-section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e0dcd8;
+        }
+
+        .menu-item {
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 15px;
+        }
+
+        .item-name {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .item-dot {
+            flex-grow: 1;
+            border-bottom: 1px dotted #ccc;
+            margin: 0 8px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .menu-item {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CAFE KZ</h1>
+            <p class="tagline">specialty coffee menu</p>
+        </header>
+
+        <section class="menu-section">
+            <div class="section-title">Signature Drinks</div>
+            <div class="menu-item">
+                <span class="item-name">Iced Annihilator</span>
+                <span class="item-dot"></span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Hot Annihilator</span>
+                <span class="item-dot"></span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="section-title">Vanilla Lattes</div>
+            <div class="menu-item">
+                <span class="item-name">Iced Vanilla Latte</span>
+                <span class="item-dot"></span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Hot Vanilla Latte</span>
+                <span class="item-dot"></span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="section-title">Caramel Collection</div>
+            <div class="menu-item">
+                <span class="item-name">Iced Caramel Latte</span>
+                <span class="item-dot"></span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Hot Caramel Latte</span>
+                <span class="item-dot"></span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Iced Shaken Salted Caramel Latte</span>
+                <span class="item-dot"></span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Hot Shaken Salted Caramel Latte</span>
+                <span class="item-dot"></span>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="section-title">Mocha & More</div>
+            <div class="menu-item">
+                <span class="item-name">Iced Mocha Latte</span>
+                <span class="item-dot"></span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Hot Mocha Latte</span>
+                <span class="item-dot"></span>
+            </div>
+            <div class="menu-item">
+                <span class="item-name">Iced Brown Sugar Shaken Latte</span>
+                <span class="item-dot"></span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
